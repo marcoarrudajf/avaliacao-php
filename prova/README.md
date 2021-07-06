@@ -13,7 +13,10 @@ Para executar o projeto localmente você deve possuir:
 
 Desenvolver, com base na estrutura dos dois relatórios existentes, um terceiro relatório chamado __Veículos acima da velocidade__.
 
-Este relatório deve buscar na tabela _rastreamento_ os registros em que o veículo estiver acima de sua velocidade máxima cadastrada.
+Este relatório deve:
+
+* buscar na tabela _rastreamento_ os registros em que o veículo estiver acima de sua velocidade máxima cadastrada.
+* ter filtros de dados por placa do veículo, nome do funcionário e intervalo de data de ocorrência. 
 
 O relatório deve possuir as seguintes colunas:
 
@@ -25,6 +28,12 @@ O relatório deve possuir as seguintes colunas:
 - Diferença entre a velocidade permitida e registrada (%)
 - Latitude
 - Longitude
+
+Será necessário enviar a estrutura do banco de dados criada pelo candidato.
+
+Personalizações no layout serão avaliadas (imagem, icones, cores, disposição dos objetos...)
+
+Todas funcionalidades do sistema deverão estar funcionais (filtros, ordenações e afins)
 
 ### Exemplo do relatório final
 
