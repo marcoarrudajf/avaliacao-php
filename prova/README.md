@@ -31,7 +31,7 @@ O relatório deve possuir as seguintes colunas:
 
 Será necessário enviar a estrutura do banco de dados criada pelo candidato.
 
-Personalizações no layout serão avaliadas (imagem, icones, cores, disposição dos objetos...)
+Personalizações no layout do sistema serão avaliadas (imagem, icones, cores, efeito zebra, disposição dos objetos...)
 
 Todas funcionalidades do sistema deverão estar funcionais (filtros, ordenações e afins)
 
