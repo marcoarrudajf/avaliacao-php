@@ -24,6 +24,12 @@
                     require('pages/relFuncionario/funcionario.php');
                     JSRequire('relFuncionario', 'RelFuncionario.js');
                     break;
+
+                case 'velMaxVeiculo':
+                    require('pages/velMaxVeiculo/vel_veiculo.php');
+                    JSRequire('velMaxVeiculo', 'VelVeiculos.js');
+                    break;
+
     
             }
     
