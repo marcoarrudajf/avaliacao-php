@@ -19,12 +19,11 @@
         justify-content: space-evenly;
         display: flex;
         flex-wrap: wrap;
-        horiz-align: right;
         gap: 10px;
     }
 
     #divBtnConsultar {
-        margin -top: 32px;
+        margin-top: 32px;
         margin-left: 10px;
     }
 

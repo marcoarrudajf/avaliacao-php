@@ -1,6 +1,6 @@
 Cmp.RelVeiculo = function() {
     
-    var private = {
+    let pvt = {
 
         render: function() {
 
@@ -16,12 +16,12 @@ Cmp.RelVeiculo = function() {
                 renderTo: '#divBtnConsultar',
                 text: 'Buscar',
                 handler: function() {
-                    private.buscar();
+                    pvt.buscar();
                 }
             });
 
             Cmp.createGrid({
-                id: 'gridDadosVeiculos',
+                id: 'gridDadosVeiculo',
                 renderTo: '#divCmpGridVeiculo',
                 header: [
                     {
@@ -51,7 +51,7 @@ Cmp.RelVeiculo = function() {
                 success: function(res) {
                     Cmp.hideLoading();
                     if(res.status == 'success') {
-                        Cmp.get('gridDadosVeiculos').loadData(res.data);
+                        Cmp.get('gridDadosVeiculo').loadData(res.data);
                     } else {
                         Cmp.showErrorMessage(res.message || 'Ocorreu um erro na requisição');
                     }
@@ -62,7 +62,7 @@ Cmp.RelVeiculo = function() {
     };
 
     this.init = function() {
-        private.render();
+        pvt.render();
     }
 
 }

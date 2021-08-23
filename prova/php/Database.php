@@ -16,9 +16,9 @@ class Database
     function __construct()
     {
         $this->ip = 'localhost';
-        $this->user = 'avaliacao';
-        $this->password = 'root';
-        $this->database = '';
+        $this->user = 'root';
+        $this->password = '';
+        $this->database = 'vel_veiculo';
     }
 
     function __destruct()

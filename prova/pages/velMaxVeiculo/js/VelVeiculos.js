@@ -10,7 +10,7 @@ Cmp.VelVeiculos = function () {
     Latitude
     Longitude*/
 
-    var private = {
+    let pvt = {
 
         render: function () {
 
@@ -47,12 +47,12 @@ Cmp.VelVeiculos = function () {
                 renderTo: '#divBtnConsultar',
                 text: 'Buscar',
                 handler: function () {
-                    private.buscar();
+                    pvt.buscar();
                 }
             });
 
             Cmp.createGrid({
-                id: 'gridDadosVelVeiculos',
+                id: 'gridDadosVelVeiculo',
                 renderTo: '#divCmpGridVelVeiculo',
                 header: [
                     {
@@ -112,7 +112,7 @@ Cmp.VelVeiculos = function () {
                 success: function (res) {
                     Cmp.hideLoading();
                     if (res.status == 'success') {
-                        Cmp.get('gridDadosVelVeiculos').loadData(res.data);
+                        Cmp.get('gridDadosVelVeiculo').loadData(res.data);
                     } else {
                         console.log(res);
                         Cmp.showErrorMessage(res.message || 'Ocorreu um erro na requisição');
@@ -123,6 +123,6 @@ Cmp.VelVeiculos = function () {
     };
 
     this.init = function () {
-        private.render();
+        pvt.render();
     }
 }

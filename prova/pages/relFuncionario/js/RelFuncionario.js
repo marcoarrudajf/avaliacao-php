@@ -1,6 +1,6 @@
 Cmp.RelFuncionario = function() {
     
-    var private = {
+    let pvt = {
 
         render: function() {
 
@@ -16,7 +16,7 @@ Cmp.RelFuncionario = function() {
                 renderTo: '#divBtnConsultar',
                 text: 'Buscar',
                 handler: function() {
-                    private.buscar();
+                    pvt.buscar();
                 }
             });
 
@@ -58,7 +58,7 @@ Cmp.RelFuncionario = function() {
     };
 
     this.init = function() {
-        private.render();
+        pvt.render();
     }
 
 }
